@@ -7,7 +7,7 @@ int main(int argc, char **argv[])		//argc is no. of input scanned and argv has e
 	char ch,e[50],s[50],*d[50];
 	strcpy(d,argv[1]);			//storing the 2nd argument which is my to-be-encrypted-string into d
 	strcpy(s,d);
-	char *rot_val="Tobias";
+	char *rot_val="Tobias";			//Tobias is variable whose value you can set in command line read as rot_value 
 	char *k=getenv(rot_val);
 	int key=atoi(k); 			//converting k to integer as by default the value scanned in by getenv will be of str format?
 	
