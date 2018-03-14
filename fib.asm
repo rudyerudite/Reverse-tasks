@@ -1,5 +1,5 @@
 extern scanf
-extern printf
+extern printf								//only prints the nth fibonacci number
 
 
 section .data
@@ -22,14 +22,14 @@ section .text
 		mov eax,0
 		mov ebx,0
 		mov ecx,1
-		mov edx,2
+		mov edx,2	
 
 		fib:
 
-		mov ebx,eax
+		mov ebx,eax		
 		add ebx,ecx
 
-		mov eax,ecx
+		mov eax,ecx	
 		mov ecx,ebx
 		inc edx
 		cmp edx,[n]
