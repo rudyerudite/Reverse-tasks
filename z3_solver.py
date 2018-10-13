@@ -1,3 +1,5 @@
+#this is a z3 program to solve a set of equations
+
 from z3 import *
 
 x=BitVec('x',35)
