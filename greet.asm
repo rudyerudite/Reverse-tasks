@@ -1,5 +1,5 @@
-extern printf
-extern scanf
+extern printf			
+extern scanf				
 
 section .data
 	msg:db "Enter your name here:",10,0
@@ -9,7 +9,7 @@ section .data
 	
 	msg1: db "Hey %s! Hope you liked my code!",10,0
 	
-section .text
+section .text				// simply prints a greeting message
 	global main
 
 	main:
