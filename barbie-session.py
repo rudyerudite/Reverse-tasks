@@ -15,7 +15,7 @@ ecx = z3.BitVec('ecx', 32)
 eax1, eax2, eax3 = z3.BitVecs('eax1 eax2 eax3',32)
 
 edx1,edx2 = z3.BitVecs('edx1 edx2',32)
-model = [eax1==eax+ecx,eax2==eax1<<z3.BitVec(12,32), eax3==eax2*ecx, edx1==eax3,edx2==edx1^eax]
+model = [eax1==eax+ecx,eax2==eax1<<z3.BitVec(12,32), eax3==eax2*ecx, edx1==eax3,edx2==edx1^ecx]
 print(model)
 s.add(model)
 print(s.check())
