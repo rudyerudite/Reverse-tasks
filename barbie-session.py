@@ -1,11 +1,11 @@
 from z3 import * 
 
 '''
-add eax ecx
-shl eax
-mul ecx
-mov edx eax
-xor edx eax
+; add eax, ecx
+; shl eax, 0xc
+; mul ecx
+; mov edx, eax
+; xor edx, ecx
 '''
 
 s = z3.Solver()
