@@ -1,4 +1,4 @@
-extern printf
+extern printf			//prints number from 1-10
 
 section .data
 	out:dd "%d",0
