@@ -1,3 +1,5 @@
+;The following code is x86 based. 
+
 extern printf
 
 section .data
